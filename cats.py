@@ -86,3 +86,10 @@ print(list(cat_sorted_by_name))
 
 first_3 = Cat.select().order_by(Cat.name).limit(3)
 print(list(first_3))
+
+# delete will delete all
+Cat.delete().execute()
+print(list(Cat.select()))
+# works with more complex relationships between tables. 
+
+
