@@ -1,5 +1,3 @@
-from turtle import color
-from typing import List
 from peewee import *
 
 db = SqliteDatabase('cats.sqlite')  # name is .db
